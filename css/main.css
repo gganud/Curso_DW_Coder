@@ -1,0 +1,606 @@
+/* */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;  
+}
+/* Comienza estilo del banner p/ index.html*/
+.bannerIndex{
+    width: 100%;
+    background-image: url("../img/index1.jpg");
+    background-size: cover;
+    background-position:center;
+    height: 500px;
+    position: relative;
+}
+
+.bannerIndex h1{
+    color: white;
+    font-size: 70px;
+    margin: 0;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0 0 3px #061d3a, 0 0 5px white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+/* Comienza estilo del menu nav*/
+.menu{
+    width: 100%;
+    background: #adadad;
+    border: #061d3a solid 1px;
+    z-index: 2;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu img{
+    width: 100px;
+    padding-top: 5px;
+}
+
+.itemOption{
+    color: #061d3a;
+    font-size: 20px;
+    
+}    
+    
+.itemOption:hover{
+    color: #0a3569;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.itemActive{
+    font-weight: bold;
+}
+
+/* Comienza estilo del cuerpo p/ index.html*/
+.mainIndex{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-areas: "mainFoto mainFoto"
+                         "mainArticle mainMap";
+    justify-content: center;
+    justify-items: center;
+}
+
+.mainFoto{
+    grid-area: mainFoto;
+    position: relative;
+    overflow: hidden;
+    margin: 50px;
+}
+
+.mainFoto img{
+    width: 100%;
+    opacity: .9;
+    border: #003e5a solid 1px;
+}
+
+.textoFoto{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+    color: #ffffff;
+    text-shadow: 0 0 5px black, 0 0 5px black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.mainArticle{
+    grid-area: mainArticle;
+    text-align: justify;
+    line-height: 25px;
+    padding: 40px;
+    
+}
+.mainMap{
+    grid-area: mainMap;
+    display: inline-block;
+    padding: 50px;
+}
+
+.mainMap iframe{
+    width: 100%;
+}
+.titulos{
+    color: #0a3569;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px 0;
+}
+.subtitulos{
+    color:#225973;
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+/* comienza estilo del footer*/
+footer{
+    font-weight: 100%;
+    background-color:#061d3a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a{
+    color: #ffffff;
+    text-decoration: none;
+      
+}
+footer a:hover{
+    color: #00A6F2;
+}
+
+.footerReturn{
+    text-align: center;
+    font-weight: bold;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+.footBox{
+    display: flex;
+    align-items: center;
+
+}
+.footBox a{
+    padding-left: 10px;
+}
+
+/* Comienza estilo del banner p/ resto de html*/
+.banner{
+    width: 100%;
+    background-image: url("../img/index1.jpg");
+    background-size: cover;
+    background-position:center;
+    height: 300px;
+    position: relative;
+}
+.banner h1{
+    color: white;
+    font-size: 70px;
+    margin: 0;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0 0 3px #061d3a, 0 0 5px white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+/* comienza el estilo de info.html*/
+.mainInfo{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-areas: "titulos titulos titulos titulos titulos"
+                         "proyecto proyecto proyecto proyecto proyecto"
+                         "video video video video video"
+                         "propuesta propuesta propuesta propuesta propuesta"
+                         "parrafo parrafo parrafo parrafo parrafo"
+                         "espacios espacios espacios espacios espacios"
+                         "espacio1 espacio2 espacio3 espacio4 espacio5"
+                         ;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px; 
+}
+
+.titulos{
+    grid-area: titulos;
+}
+.proyecto{
+    grid-area: proyecto;
+}
+.video{
+    grid-area: video;
+    width: 70%;
+
+}
+.video iframe{
+    border: solid 2px #003e5a;
+    border-radius: 4px;
+    width: 100%;    
+}
+.propuesta{
+    grid-area: propuesta;
+}
+.parrafo{
+    grid-area: parrafo;
+    text-align: justify;
+    line-height: 25px;
+}
+.espacios{
+    grid-area: espacios;
+}
+.espacio1{
+    grid-area: espacio1;
+    text-align: center;
+}
+.espacio2{
+    grid-area: espacio2;
+    text-align: center;
+}
+.espacio3{
+    grid-area: espacio3;
+    text-align: center;
+}
+.espacio4{
+    grid-area: espacio4;
+    text-align: center;
+}
+.espacio5{
+    grid-area: espacio5;
+    text-align: center;
+}
+.fotoEspacio img{
+    width: 200px;
+    height: 150px;
+    border-radius: 3px;
+}
+.fotoEspacio a p{
+    color: #061d3a;
+    font-size: 15px; 
+} 
+.fotoEspacio a p:hover{
+    color: #0a3569;
+    font-weight: bold;
+    text-decoration:underline ;
+}
+
+/* comienza el estilo de alumnos.html*/
+.mainAlumnos{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-areas: "mensaje aviso"
+                         "ingreso ingreso"
+                         ;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 20px; 
+}
+.mensaje{
+    grid-area: mensaje;
+    text-align: left;
+    line-height: 25px;
+    margin: 20px;
+}
+.mensaje ul{
+    list-style:circle;
+    padding-left: 30px;
+}
+.aviso{
+    grid-area: aviso;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    margin: 20px;
+}
+.ingreso{
+    grid-area: ingreso;
+    border: 1px #003e5a solid;
+    border-radius: 10px;
+    margin: 30px;
+    background-color: white;
+}
+.ingreso img{   
+    border-radius: 10px 10px 0 0;
+}
+.formAlu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: left;
+    font-style: italic;
+    padding: 10px;
+}
+.formAlu p{
+    margin: 20px 0;
+}
+.formAlu input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    background-color:#225973;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.formAlu label{
+    margin-left: 10px;
+}
+.botones{
+    text-align: center;
+}
+.formAlu input[type=submit]{
+   background-color: #2e799c;
+   width: 30%;
+   border-radius: 30px;
+   font-weight: bold;
+   text-align: center; 
+}
+
+.formAlu input[type=reset]{
+    background-color: #2e799c;
+    width: 50%;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center; 
+ }
+
+/* comienza el estilo de autoridades.html*/
+.mainAutoridades{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-areas: "titulos titulos titulos titulos"
+                         "infoAutoridades infoAutoridades infoAutoridades infoAutoridades"
+                         "fotoPpal fotoPpal fotoPpal fotoPpal"
+                         "foto1 foto2 foto3 foto4"
+                         ;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+    grid-row-gap: 1rem; 
+}
+.titulos{
+    grid-area: titulos;   
+}
+.infoAutoridades{
+    grid-area: infoAutoridades;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: justify;
+    width: 80%;
+}
+.fotoPpal{
+    grid-area: fotoPpal;
+    text-align: center;
+    padding: 3rem;
+}
+.foto1{
+    grid-area: foto1;
+    text-align: center;
+}
+.foto2{
+    grid-area: foto2;
+    text-align: center;
+}
+.foto3{
+    grid-area: foto3;
+    text-align: center;
+}
+.foto4{
+    grid-area: foto4;
+    text-align: center;
+}
+.cargo{
+    text-decoration: underline;
+    color:#225973;
+    font-size: 30px;
+    padding: 10px 0;  
+}
+.subcargo{
+    text-decoration: underline;
+    color:#225973;
+    font-size: 22px;
+    padding: 0px 0;
+}
+.nombre{
+    font-size: 18px;
+    color: #003e5a;
+    font-weight: bold;
+    padding-top: 8px;  
+}
+.mainAutoridades img{
+    width: 15rem;
+    border-radius: 5px;
+    border: 1px #003e5a solid;
+}
+.fotoPpal img{
+    border-radius: 5px;
+    border: 1px #003e5a solid;
+    width: 100%;
+}
+
+/* comienza el estilo de contacto.html*/
+.contacto{
+    padding: 30px;
+}
+.contactoImg{
+    display: block;
+    width: 500px;
+    margin-left: 200px;
+    position: relative;
+    bottom: 80px;
+    border: #225973 solid 1px;
+    border-radius: 5px; 
+
+}
+.formCont{
+    padding: 10px;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: left;
+    font-style: italic;
+    padding-left: 100px;
+
+}
+.formCont input{
+    background-color: whitesmoke;
+    padding: 8px 10px;
+    margin: 8px 2px;
+    border: none;
+    border-bottom: #225973 solid 1px;
+    font-size: 20px;
+}
+.formCont select{
+    background-color: whitesmoke;
+    padding: 8px 10px;
+    margin: 8px 2px;
+    border: none;
+    border-bottom: #225973 solid 1px;
+    font-size: 15px;
+}
+.formCont textarea{
+    background-color: whitesmoke;
+    padding: 8px 10px;
+    margin: 8px 2px;
+    border: #225973 solid 1px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+.formCont input[type=submit]{
+   background-color: #2e799c;
+   width: 30%;
+   border-radius: 30px;
+   font-weight: bold;
+   text-align: center; 
+   color: white;
+}
+.formCont input[type=reset]{
+    background-color: #2e799c;
+    width: 50%;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center; 
+ }
+
+
+
+ @media only screen and (max-width:1024px){
+    /*Diseño header index*/
+    .bannerIndex h1{
+        font-size: 40px;
+    }
+    /*Diseño header resto*/
+    .banner h1{
+        font-size: 40px;
+    }
+    /*Diseño Nav*/
+    .menu{
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        grid-template-areas: "itemIndex option1 option1"
+                            "option2 option3 option4"
+                         ;
+        justify-content: space-around;
+        justify-items: center;
+    }
+    .itemIndex{
+        grid-area: itemIndex;
+    }
+    .option1{
+        grid-area: option1;
+    }
+    .option2{
+        grid-area: option2;
+    }
+    .option3{
+        grid-area: option3;
+    }
+    .option4{
+        grid-area: option4;
+    }
+    /*Diseño main Index*/
+    .mainIndex{
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+    }
+    /*Diseño footer*/
+    .foot{
+        flex-direction: column;
+        height: 11rem;
+        justify-content: space-around;
+    }
+    /*Diseño main Info*/
+    .mainInfo{
+        display: grid;
+        grid-template-areas: "titulos titulos"
+                             "proyecto proyecto"
+                             "video video"
+                             "propuesta propuesta "
+                             "parrafo parrafo"
+                             "espacios espacios"
+                             "espacio1 espacio2"
+                             "espacio3 espacio4"
+                             "espacio5 espacio5"
+                             ;
+
+    }
+    /*Diseño main Alumnos*/
+    .mainAlumnos{
+        display: flex;
+        flex-direction: column;
+    }
+    .mensaje{
+        width: 50%;
+    }
+    .aviso{
+        width: 50%;
+    }
+    /*Diseño main Alumnos*/
+    .mainAutoridades{
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-areas: "titulos titulos"
+                             "infoAutoridades infoAutoridades"
+                             "fotoPpal fotoPpal"
+                             "foto1 foto2"
+                             "foto3 foto4"
+                             ;
+    }
+
+}
+@media only screen and (max-width:600px){
+    /*Diseño header index*/
+    .bannerIndex h1{
+        font-size: 30px;
+    }
+    /*Diseño header resto*/
+    .banner h1{
+        font-size: 30px;
+    }
+    /*Diseño Nav*/
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    /*Diseño main Info*/
+    .mainInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*Diseño main Alumnos*/
+    .mainAlumnos{
+        display: flex;
+        flex-direction: column;
+    }
+    .mensaje{
+        width: 100%;
+    }
+    .aviso{
+        width: 100%;
+    }
+}
