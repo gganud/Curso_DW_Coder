@@ -46,18 +46,22 @@
 .menu img{
     width: 100px;
     padding-top: 5px;
+    transition: .7s;
 }
-
+.menu img:hover{
+    transform: scale(1.2);
+}
 .itemOption{
     color: #061d3a;
     font-size: 20px;
-    
+    transition: .7s;  
 }    
     
 .itemOption:hover{
     color: #0a3569;
     text-decoration: underline;
     font-weight: bold;
+    transform: scale(1.2);
 }
 .itemActive{
     font-weight: bold;
@@ -246,6 +250,17 @@ footer a:hover{
     grid-area: espacio5;
     text-align: center;
 }
+.fotoEspacio{
+    transition: .7s;
+    padding: 1rem;
+}
+.fotoEspacio:hover{
+    transform: scale(1.2);
+    color: #0a3569;
+    font-weight: bold;
+    text-decoration:underline ;
+
+}
 .fotoEspacio img{
     width: 200px;
     height: 150px;
@@ -255,11 +270,6 @@ footer a:hover{
     color: #061d3a;
     font-size: 15px; 
 } 
-.fotoEspacio a p:hover{
-    color: #0a3569;
-    font-weight: bold;
-    text-decoration:underline ;
-}
 
 /* comienza el estilo de alumnos.html*/
 .mainAlumnos{
@@ -328,6 +338,10 @@ footer a:hover{
 }
 .botones{
     text-align: center;
+    transition: .7s;
+}
+.botones:hover{
+    transform: scale(1.2);
 }
 .formAlu input[type=submit]{
    background-color: #2e799c;
@@ -394,13 +408,13 @@ footer a:hover{
     text-decoration: underline;
     color:#225973;
     font-size: 30px;
-    padding: 10px 0;  
+    padding: 10px 0px;  
 }
 .subcargo{
     text-decoration: underline;
     color:#225973;
     font-size: 22px;
-    padding: 0px 0;
+    padding: 5px 0;
 }
 .nombre{
     font-size: 18px;
