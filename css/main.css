@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;  
+    font-family: 'Roboto', sans-serif;      
 }
 /* Comienza estilo del banner p/ index.html*/
 .bannerIndex{
@@ -42,7 +42,17 @@
     align-items: center;
     padding: 10px;
 }
-
+.menuBoot{
+    background: #adadad;
+    border: #061d3a solid 1px;
+    padding: 0.3rem 3rem;  
+}
+.menuBoot img{
+    transition: .7s;
+}
+.menuBoot img:hover{
+    transform: scale(1.2);
+}
 .menu img{
     width: 100px;
     padding-top: 5px;
@@ -54,7 +64,8 @@
 .itemOption{
     color: #061d3a;
     font-size: 20px;
-    transition: .7s;  
+    transition: .7s;
+    text-decoration: none;  
 }    
     
 .itemOption:hover{
@@ -121,7 +132,7 @@
     color: #0a3569;
     font-weight: bold;
     font-size: 40px;
-    padding: 20px 0;
+    padding: 20px 20px;
 }
 .subtitulos{
     color:#225973;
@@ -255,15 +266,15 @@ footer a:hover{
     padding: 1rem;
 }
 .fotoEspacio:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: #0a3569;
     font-weight: bold;
     text-decoration:underline ;
 
 }
 .fotoEspacio img{
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     border-radius: 3px;
 }
 .fotoEspacio a p{
@@ -438,23 +449,17 @@ footer a:hover{
     padding: 30px;
 }
 .contactoImg{
-    display: block;
-    width: 500px;
-    margin-left: 200px;
-    position: relative;
-    bottom: 80px;
+    margin-left: 0rem;
+    width: 100%;
     border: #225973 solid 1px;
     border-radius: 5px; 
-
 }
 .formCont{
-    padding: 10px;
+    padding: 0px;
     line-height: 25px;
     font-size: 20px;
     text-align: left;
-    font-style: italic;
-    padding-left: 100px;
-
+    font-style: italic; 
 }
 .formCont input{
     background-color: whitesmoke;
@@ -463,6 +468,7 @@ footer a:hover{
     border: none;
     border-bottom: #225973 solid 1px;
     font-size: 20px;
+    width: 100%;
 }
 .formCont select{
     background-color: whitesmoke;
@@ -474,6 +480,7 @@ footer a:hover{
 }
 .formCont textarea{
     background-color: whitesmoke;
+    width: 100%;
     padding: 8px 10px;
     margin: 8px 2px;
     border: #225973 solid 1px;
@@ -482,22 +489,28 @@ footer a:hover{
 }
 .formCont input[type=submit]{
    background-color: #2e799c;
-   width: 30%;
+   width: 100%;
    border-radius: 30px;
    font-weight: bold;
    text-align: center; 
    color: white;
+   transition: .7s;
 }
 .formCont input[type=reset]{
     background-color: #2e799c;
-    width: 50%;
+    width: 100%;
     color: white;
     border-radius: 30px;
     font-weight: bold;
-    text-align: center; 
+    text-align: center;
+    transition: .7s; 
  }
-
-
+.formCont input[type=reset]:hover{
+    transform: scale(1.1);
+}
+.formCont input[type=submit]:hover{
+    transform: scale(1.1);
+}
 
  @media only screen and (max-width:1024px){
     /*Diseño header index*/
@@ -573,7 +586,7 @@ footer a:hover{
     .aviso{
         width: 50%;
     }
-    /*Diseño main Alumnos*/
+    /*Diseño main Autoridades*/
     .mainAutoridades{
         background-color: whitesmoke;
         display: grid;
