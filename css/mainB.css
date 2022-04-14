@@ -1,0 +1,294 @@
+/* border: solid 1px red*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;      
+}
+/* Estilo de titulos y subtitulos*/
+.titulos{
+    color: #0a3569;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.subtitulos{
+    color:#225973;
+    font-size: 1.3rem;
+    padding: 0rem;
+}
+/* Estilo del banner p/index.html*/
+.banner{
+    width: 100%;
+    background-image: url("../img/index1.jpg");
+    background-size: cover;
+    background-position:center;
+    height: 150px;
+    position: relative;
+}
+.banner h1{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0 0 3px #061d3a, 0 0 5px white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+/*Estilo del navbar*/
+.navbar{
+    background-color: #adadad;
+    border: #061d3a solid 1px;
+    font-weight: bold;
+    font-size: 1rem; 
+}
+.navbar img{
+    width: 60%;
+    height: auto;
+}
+.menu .nav-item:hover{
+    text-decoration: underline;
+}
+/*Estilo del footer*/
+footer{
+    font-weight: 100%;
+    background-color:#061d3a;
+    color: white;
+    text-align: center;  
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: #00A6F2;
+}
+.subir{
+    font-weight: bold;
+}
+footer p{
+    margin-bottom: 0;
+}
+.imgFooter{
+    width: 1.4rem;
+    height: auto;
+}
+footer div div div{
+    padding-top: .3rem;
+}
+/*Estilo del main index.html*/
+.carousel{
+    padding: 0rem;
+}
+.carousel-caption{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 5px black, 0 0 5px black;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    left:0;  
+}
+.carousel-caption p:first-child{
+    text-align: left;
+    font-size: 1rem;
+    margin-left:30px;
+    margin-top: 5%;
+}
+.carousel-caption p:last-child{
+    text-align: center;
+    font-size: .7rem;
+    margin-top: 40%;  
+}
+.mainArticle{
+    text-align: justify;
+    line-height: 1.5rem;
+    padding: 3rem;    
+}
+.map{
+    padding: 0 3rem 2rem;
+}
+.map iframe{
+   width: 100%;
+}
+
+/*Estilo del main info.html*/
+
+.video{
+    margin: 0 3rem 3rem;
+}
+.video iframe{
+    width: 100%;
+    border: solid 2px #003e5a;
+    border-radius: .5rem;
+}
+.parrafoInfo{
+    text-align: justify;
+    line-height: 25px;
+    margin: 0 3rem 3rem;
+}
+.carouselInfo{
+    margin: 0 3rem 3rem;
+    border: solid 2px #003e5a;
+    border-radius: .5rem;
+}
+
+.carouselInfo .carousel-caption p{
+    text-align: left;
+    font-size: 1rem;
+    margin-left:30px;
+    margin-top: 5%;
+}
+/*Estilo del main alumnos.html*/
+.infoAlumnos{
+    padding: 3rem;
+}
+.infoAlumnos p{
+    text-align: justify;
+}
+.aviso{
+    text-align: justify;
+    padding: 0 3rem 0rem;
+}
+.ingresoTitulo{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.ingreso{
+    background-color: white;
+    padding-bottom: 2rem;
+}
+.ingreso input[type=text], .ingreso button[type=submit]{
+    width: 17rem;
+}
+.ingreso button, .ingreso input[type=checkbox]{
+    background-color: #003e5a;
+}
+.ingreso button:hover{
+    background-color: #004c6e;
+}
+
+/*Estilo del main autoridades.html*/
+.mainAutoridades p{
+    margin-bottom: 0;
+}
+.mainAutoridades img{
+    margin-bottom: 0;
+    border-radius: 5px;
+    border: 1px #003e5a solid;
+}
+.infoAutoridades{
+    line-height: 25px;
+    font-size: 18px;
+    text-align: justify;
+    padding: 0 3rem 0rem;
+}
+.mainAutoridades .card{
+    border:none;
+}
+.cargo{
+    text-decoration: underline;
+    color:#225973;
+    font-size: 1.5rem;
+    padding: 5px 0;
+}
+.nombre{
+    font-size: 1rem;
+    color: #003e5a;
+    font-weight: bold;
+    padding-top: 8px;  
+}
+/*Estilo del main contacto.html*/
+.mainContacto img{
+    width: 100%;
+    border: #225973 solid 1px;
+    border-radius: 5px; 
+}
+.contacto{
+    background-color: white;
+}
+.anchoInput{
+    width: 35rem;
+}
+.contacto button, .contacto input[type=checkbox]{
+    background-color: #003e5a;
+}
+.contacto button:hover{
+    background-color: #004c6e;
+}
+.contacto button{
+    width: 80%;
+}
+@media only screen and (min-width:576px){
+    .banner h1{
+        font-size: 2.5rem;
+    }
+    .titulos{
+        font-size: 2rem;
+    }
+    .subtitulos{
+        font-size: 1.7rem;
+    }
+    /*Estilo del main index.html*/
+    .carousel-caption p:first-child{
+        font-size: 2rem;
+        margin-left:30px;
+        margin-top: 3%;
+    }
+    .carousel-caption p:last-child{
+        font-size: 1rem;
+        margin-top: 44%;  
+    }
+    /*Estilo del main info.html*/
+    .carouselInfo .carousel-caption p{
+        font-size: 2rem;
+        margin-left:30px;
+        margin-top: 3%;
+    }
+    /*Estilo del main autoridades.html*/
+    .director{
+        width: 30rem;
+    }
+}
+@media only screen and (min-width:992px){
+    .banner{
+        height: 300px;
+    }
+    .banner h1{
+        font-size: 3rem;
+    }
+    .titulos{
+        font-size: 2.3rem;
+    }
+    .subtitulos{
+        font-size: 2rem;
+    }
+    /*Estilo del main index.html*/
+    .carousel-caption p:first-child{
+        font-size: 2.5rem;
+        margin-left:30px;
+        margin-top: 3%;
+    }
+    .carousel-caption p:last-child{
+        font-size: 1.5rem;
+        margin-top: 47%;  
+    }
+    /*Estilo del main info.html*/
+    .carouselInfo .carousel-caption p{
+        font-size: 2.5rem;
+        margin-left:30px;
+        margin-top: 3%;
+    }
+    /*Estilo del main alumnos.html*/
+    .ingreso input[type=text], .ingreso button[type=submit]{
+        width: 25rem;
+    }
+    /*Estilo del main autoridades.html*/
+    .director{
+        width: 40rem;
+    }
+}
