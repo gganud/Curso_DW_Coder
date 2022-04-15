@@ -1,0 +1,19 @@
+.banner{
+    width: 100%;
+    background-image: url("../img/index1.jpg");
+    background-size: cover;
+    background-position:center;
+    height: $heightBanner;
+    position: relative;
+    h1{
+        color: $colorBanner;
+        font-size: $SizeBanner;
+        margin: 0;
+        font-style: italic;
+        font-family: 'Open Sans', sans-serif;
+        text-shadow: 0 0 3px #061d3a, 0 0 5px white;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+}

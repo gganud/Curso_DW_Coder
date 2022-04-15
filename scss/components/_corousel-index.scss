@@ -1,0 +1,25 @@
+.carousel{
+    padding: 0rem;
+    .carousel-caption{
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 0 0 5px black, 0 0 5px black;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        left:0;
+        p{
+            &:first-child{
+                text-align: left;
+                font-size: 1rem;
+                margin-left:30px;
+                margin-top: 5%;
+            }
+            &:last-child{
+                text-align: center;
+                font-size: .7rem;
+                margin-top: 40%;  
+            } 
+        }
+    }
+}

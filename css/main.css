@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif; }
+
+.banner {
+  width: 100%;
+  background-image: url("../img/index1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  position: relative; }
+  .banner h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0 0 3px #061d3a, 0 0 5px white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px; }
+
+.menu {
+  background-color: #adadad;
+  border: #003e5a solid 1px;
+  font-weight: bold;
+  font-size: 1rem; }
+  .menu img {
+    width: 60%;
+    height: auto; }
+  .menu .nav-item:hover {
+    text-decoration: underline; }
+
+.subtitulos {
+  color: #225973;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 2rem; }
+
+.mainIndex {
+  background-color: whitesmoke; }
+  .mainIndex .carousel {
+    padding: 0rem; }
+    .mainIndex .carousel .carousel-caption {
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 0 0 5px black, 0 0 5px black;
+      font-weight: bold;
+      width: 100%;
+      height: 100%;
+      left: 0; }
+      .mainIndex .carousel .carousel-caption p:first-child {
+        text-align: left;
+        font-size: 1rem;
+        margin-left: 30px;
+        margin-top: 5%; }
+      .mainIndex .carousel .carousel-caption p:last-child {
+        text-align: center;
+        font-size: .7rem;
+        margin-top: 40%; }
+  .mainIndex .mainArticle {
+    text-align: justify;
+    line-height: 1.5rem;
+    padding: 3rem; }
+  .mainIndex .map {
+    padding: 0 3rem 2rem; }
+    .mainIndex .map iframe {
+      width: 100%; }
+
+footer {
+  font-weight: 100%;
+  background-color: #061d3a;
+  color: white;
+  text-align: center; }
+  footer a {
+    text-decoration: none;
+    color: white; }
+    footer a:hover {
+      color: #00A6F2; }
+  footer .subir {
+    font-weight: bold; }
+  footer p {
+    margin-bottom: 0; }
+  footer .imgFooter {
+    width: 1.4rem;
+    height: auto; }
+  footer div div div {
+    padding-top: .3rem; }
+
+@media only screen and (min-width: 576px) {
+  .banner h1 {
+    font-size: 2.5rem; }
+  .titulos {
+    font-size: 2rem; }
+  .subtitulos {
+    font-size: 1.7rem; }
+  /*Estilo del navbar*/
+  .menu img {
+    transition: .7s; }
+    .menu img:hover {
+      transform: scale(1.2); }
+  .menu .nav-item {
+    transition: .7s; }
+    .menu .nav-item:hover {
+      transform: scale(1.1); }
+  /*Estilo del main index.html*/
+  .carouselIndex .carousel-inner .carousel-item .carousel-caption p:first-child {
+    font-size: 2rem;
+    margin-left: 30px;
+    margin-top: 3%; }
+  .carouselIndex .carousel-inner .carousel-item .carousel-caption p:last-child {
+    font-size: 1rem;
+    margin-top: 44%; } }
+
+@media only screen and (min-width: 992px) {
+  .banner {
+    height: 300px; }
+    .banner h1 {
+      font-size: 3rem; }
+  .titulos {
+    font-size: 2.3rem; }
+  .subtitulos {
+    font-size: 2rem; }
+  /*Estilo del main index.html*/
+  .carouselIndex .carousel-inner .carousel-item .carousel-caption p:first-child {
+    font-size: 2.5rem;
+    margin-left: 30px;
+    margin-top: 3%; }
+  .carouselIndex .carousel-inner .carousel-item .carousel-caption p:last-child {
+    font-size: 1.5rem;
+    margin-top: 47%; } }

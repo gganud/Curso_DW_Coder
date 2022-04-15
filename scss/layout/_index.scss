@@ -1,0 +1,15 @@
+.mainIndex{
+    background-color: $colorMain;
+    @import "components/corousel-index";
+    .mainArticle{
+        text-align: justify;
+        line-height: 1.5rem;
+        padding: 3rem;    
+    }
+    .map{
+        padding: 0 3rem 2rem;
+        iframe{
+            width: 100%;
+         }
+    }
+}

@@ -1,0 +1,30 @@
+footer{
+    font-weight: 100%;
+    background-color:$colorFooter;
+    color: white;
+    text-align: center; 
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: #00A6F2;
+        }
+    }
+    .subir{
+        font-weight: bold;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    .imgFooter{
+        width: $footerIcon;
+        height: auto;
+    }
+    div{
+        div{
+            div{
+                padding-top: .3rem;
+            }
+        }
+    }
+}

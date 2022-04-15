@@ -1,0 +1,49 @@
+@media only screen and (min-width:576px){
+    .banner{
+        h1{
+            font-size: 2.5rem;
+        }
+    } 
+    .titulos{
+        font-size: 2rem;
+    }
+    .subtitulos{
+        font-size: 1.7rem;
+    }
+    /*Estilo del navbar*/
+    .menu{
+        img{
+            transition: .7s; 
+            &:hover{
+                transform: scale(1.2); 
+            }
+        }
+        .nav-item{
+            transition: .7s;
+            &:hover{
+                transform: scale(1.1); 
+            } 
+        }
+    }
+    /*Estilo del main index.html*/
+    .carouselIndex{
+        .carousel-inner{
+            .carousel-item{
+                .carousel-caption{
+                    p{
+                        &:first-child{
+                            font-size: 2rem;
+                            margin-left:30px;
+                            margin-top: 3%; 
+                        }
+                        &:last-child{
+                            font-size: 1rem;
+                            margin-top: 44%;  
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}
+

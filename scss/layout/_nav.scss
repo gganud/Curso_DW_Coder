@@ -1,0 +1,15 @@
+.menu{
+    background-color: $colorNav;
+    border: $colorBorde solid 1px;
+    font-weight: bold;
+    font-size: 1rem;
+    img{
+        width: 60%;
+        height: auto;
+    }
+    .nav-item{
+        &:hover{
+            text-decoration: underline;
+        }
+    } 
+}
