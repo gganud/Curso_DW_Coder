@@ -167,6 +167,7 @@ footer div div div{
 }
 .ingreso button, .ingreso input[type=checkbox]{
     background-color: #003e5a;
+    border: none;
 }
 .ingreso button:hover{
     background-color: #004c6e;
@@ -191,7 +192,6 @@ footer div div div{
     border:none;
 }
 .cargo{
-    text-decoration: underline;
     color:#225973;
     font-size: 1.5rem;
     padding: 5px 0;
@@ -216,6 +216,7 @@ footer div div div{
 }
 .contacto button, .contacto input[type=checkbox]{
     background-color: #003e5a;
+    border: none;
 }
 .contacto button:hover{
     background-color: #004c6e;
@@ -232,6 +233,19 @@ footer div div div{
     }
     .subtitulos{
         font-size: 1.7rem;
+    }
+    /*Estilo del navbar*/
+    .navbar img{
+        transition: .7s; 
+    }
+    .navbar img:hover{
+        transform: scale(1.2); 
+    }
+    .menu .nav-item{
+        transition: .7s; 
+    }
+    .menu .nav-item:hover{
+        transform: scale(1.1); 
     }
     /*Estilo del main index.html*/
     .carousel-caption p:first-child{
@@ -252,6 +266,12 @@ footer div div div{
     /*Estilo del main autoridades.html*/
     .director{
         width: 30rem;
+    }
+    .mainAutoridades img{
+        transition: .7s; 
+    }
+    .mainAutoridades img:hover{
+        transform: scale(1.05); 
     }
 }
 @media only screen and (min-width:992px){
