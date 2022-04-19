@@ -38,7 +38,7 @@
   color: #225973;
   font-weight: bold;
   font-size: 1.3rem;
-  padding: 2rem; }
+  padding: 2rem 0 .5rem; }
 
 .mainIndex {
   background-color: whitesmoke; }
@@ -64,9 +64,9 @@
   .mainIndex .mainArticle {
     text-align: justify;
     line-height: 1.5rem;
-    padding: 3rem; }
+    padding: 2rem; }
   .mainIndex .map {
-    padding: 0 3rem 2rem; }
+    padding: 0 2rem 2rem; }
     .mainIndex .map iframe {
       width: 100%; }
 
