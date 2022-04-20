@@ -1,9 +1,14 @@
-@import "base/reset";
 @import "utilities/variables";
+@import "base/reset";
 @import "layout/header";
 @import "layout/nav";
+@import "layout/titulos";
 @import "layout/subtitulos";
-@import "layout/index";
 @import "layout/footer";
+@import "layout/index";
+@import "layout/info";
+@import "layout/alumnos";
+@import "layout/autoridades";
+@import "layout/contacto";
 @import "layout/breakpoint-sm";
 @import "layout/breakpoint-lg";

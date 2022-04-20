@@ -1,0 +1,19 @@
+.ingreso{
+    background-color: white;
+    padding-bottom: 2rem;
+    input[type=text]{
+        width: 17rem;
+    }
+    input[type=checkbox]{
+        background-color: #003e5a;
+        border: none;
+    }
+    button[type=submit]{
+        width: 17rem;
+        background-color: #003e5a;
+        border: none;
+        &:hover{
+            background-color: #004c6e;
+        }
+    }
+}

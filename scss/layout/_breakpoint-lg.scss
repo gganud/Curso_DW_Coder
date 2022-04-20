@@ -30,5 +30,34 @@
                 }
             }
         }  
-    }   
+    }
+    /*Estilo del main info.html*/
+    .carouselInfo{
+        .carousel-inner{
+            .carousel-item{
+                .carousel-caption{
+                    p{
+                        font-size: 2.5rem;
+                        margin-left:30px;
+                        margin-top: 3%;
+                    }
+                }
+            }
+        } 
+    }
+    /*Estilo del main alumnos.html*/
+    .ingreso{
+        input[type=text]{
+            width: 25rem;
+        }
+        button[type=submit]{
+            width: 25rem;
+        }   
+    }
+    /*Estilo del main autoridades.html*/
+    .mainAutoridades{
+        .director{
+            width: 40rem;
+        }
+    }
 }

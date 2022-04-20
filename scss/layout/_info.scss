@@ -1,0 +1,17 @@
+/*Estilo del main info.html*/
+.mainInfo{
+    .video{
+        iframe{
+            border: solid 2px #003e5a;
+            border-radius: .5rem;
+        }
+    }
+    .propuesta{
+        margin: 2rem 0 0;
+    }
+    .parrafoInfo{
+        text-align: justify;
+        line-height: 25px;
+    }
+    @import "components/corousel-info";
+}

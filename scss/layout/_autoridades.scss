@@ -1,0 +1,32 @@
+/*Estilo del main autoridades.html*/
+.mainAutoridades{
+    p{
+        margin-bottom: 0;
+    }
+    img{
+        margin-bottom: 0;
+        border-radius: 5px;
+        border: 1px $colorBorde solid;
+    }
+    .infoAutoridades{
+        line-height: 25px;
+        font-size: 18px;
+        text-align: justify;
+        padding: 0 3rem 0rem;
+    }
+    .card{
+        border:none;
+        .cargo{
+            color:$colorSubtitulos;
+            font-size: 1.5rem;
+            padding: 5px 0;
+        }
+        .nombre{
+            font-size: 1rem;
+            color: #003e5a;
+            font-weight: bold;
+            padding-top: 8px;  
+        }
+    }
+}
+

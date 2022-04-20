@@ -1,0 +1,11 @@
+/*Estilo del main contacto.html*/
+.mainContacto{
+    img{
+        width: 100%;
+        border: $colorBorde solid 1px;
+        border-radius: 5px; 
+    }
+}
+.contacto{
+    @import "components/form-contacto";
+}

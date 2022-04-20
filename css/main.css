@@ -34,41 +34,16 @@
   .menu .nav-item:hover {
     text-decoration: underline; }
 
+.titulos {
+  color: #0a3569;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 2rem 0 0; }
+
 .subtitulos {
   color: #225973;
   font-weight: bold;
-  font-size: 1.3rem;
-  padding: 2rem 0 .5rem; }
-
-.mainIndex {
-  background-color: whitesmoke; }
-  .mainIndex .carousel {
-    padding: 0rem; }
-    .mainIndex .carousel .carousel-caption {
-      text-align: center;
-      color: #ffffff;
-      text-shadow: 0 0 5px black, 0 0 5px black;
-      font-weight: bold;
-      width: 100%;
-      height: 100%;
-      left: 0; }
-      .mainIndex .carousel .carousel-caption p:first-child {
-        text-align: left;
-        font-size: 1rem;
-        margin-left: 30px;
-        margin-top: 5%; }
-      .mainIndex .carousel .carousel-caption p:last-child {
-        text-align: center;
-        font-size: .7rem;
-        margin-top: 40%; }
-  .mainIndex .mainArticle {
-    text-align: justify;
-    line-height: 1.5rem;
-    padding: 2rem; }
-  .mainIndex .map {
-    padding: 0 2rem 2rem; }
-    .mainIndex .map iframe {
-      width: 100%; }
+  font-size: 1.3rem; }
 
 footer {
   font-weight: 100%;
@@ -89,6 +64,141 @@ footer {
     height: auto; }
   footer div div div {
     padding-top: .3rem; }
+
+/*Estilo del main index.html*/
+.mainIndex .carousel {
+  padding: 0rem; }
+  .mainIndex .carousel .carousel-caption {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 5px black, 0 0 5px black;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    left: 0; }
+    .mainIndex .carousel .carousel-caption p:first-child {
+      text-align: left;
+      font-size: 1rem;
+      margin-left: 30px;
+      margin-top: 5%; }
+    .mainIndex .carousel .carousel-caption p:last-child {
+      text-align: center;
+      font-size: .7rem;
+      margin-top: 40%; }
+
+.mainIndex .mainArticle {
+  text-align: justify;
+  line-height: 1.5rem;
+  padding: 2rem; }
+
+.mainIndex .map {
+  padding: 0 2rem 2rem; }
+  .mainIndex .map iframe {
+    width: 100%; }
+
+/*Estilo del main info.html*/
+.mainInfo .video iframe {
+  border: solid 2px #003e5a;
+  border-radius: .5rem; }
+
+.mainInfo .propuesta {
+  margin: 2rem 0 0; }
+
+.mainInfo .parrafoInfo {
+  text-align: justify;
+  line-height: 25px; }
+
+.mainInfo .carouselInfo {
+  padding: 0rem;
+  border: solid 2px #003e5a;
+  border-radius: .5rem; }
+  .mainInfo .carouselInfo .carousel-caption {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 5px black, 0 0 5px black;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    left: 0; }
+    .mainInfo .carouselInfo .carousel-caption p {
+      text-align: left;
+      font-size: 1rem;
+      margin-left: 30px;
+      margin-top: 5%; }
+
+/*Estilo del main alumnos.html*/
+.infoAlumnos {
+  padding: 2rem; }
+  .infoAlumnos p {
+    text-align: justify; }
+
+.aviso {
+  text-align: justify;
+  padding: 0 3rem 0rem; }
+
+.ingresoTitulo {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem; }
+
+.ingreso {
+  background-color: white;
+  padding-bottom: 2rem; }
+  .ingreso input[type=text] {
+    width: 17rem; }
+  .ingreso input[type=checkbox] {
+    background-color: #003e5a;
+    border: none; }
+  .ingreso button[type=submit] {
+    width: 17rem;
+    background-color: #003e5a;
+    border: none; }
+    .ingreso button[type=submit]:hover {
+      background-color: #004c6e; }
+
+/*Estilo del main autoridades.html*/
+.mainAutoridades p {
+  margin-bottom: 0; }
+
+.mainAutoridades img {
+  margin-bottom: 0;
+  border-radius: 5px;
+  border: 1px #003e5a solid; }
+
+.mainAutoridades .infoAutoridades {
+  line-height: 25px;
+  font-size: 18px;
+  text-align: justify;
+  padding: 0 3rem 0rem; }
+
+.mainAutoridades .card {
+  border: none; }
+  .mainAutoridades .card .cargo {
+    color: #225973;
+    font-size: 1.5rem;
+    padding: 5px 0; }
+  .mainAutoridades .card .nombre {
+    font-size: 1rem;
+    color: #003e5a;
+    font-weight: bold;
+    padding-top: 8px; }
+
+/*Estilo del main contacto.html*/
+.mainContacto img {
+  width: 100%;
+  border: #003e5a solid 1px;
+  border-radius: 5px; }
+
+.contacto .formContacto button {
+  background-color: #003e5a;
+  border: none;
+  width: 80%; }
+  .contacto .formContacto button:hover {
+    background-color: #004c6e; }
+
+.contacto .formContacto input[type=checkbox] {
+  background-color: #003e5a;
+  border: none; }
 
 @media only screen and (min-width: 576px) {
   .banner h1 {
@@ -113,7 +223,19 @@ footer {
     margin-top: 3%; }
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:last-child {
     font-size: 1rem;
-    margin-top: 44%; } }
+    margin-top: 44%; }
+  /*Estilo del main info.html*/
+  .carouselInfo .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 2rem;
+    margin-left: 30px;
+    margin-top: 3%; }
+  /*Estilo del main autoridades.html*/
+  .mainAutoridades .director {
+    width: 30rem; }
+  .mainAutoridades img {
+    transition: .7s; }
+    .mainAutoridades img:hover {
+      transform: scale(1.05); } }
 
 @media only screen and (min-width: 992px) {
   .banner {
@@ -131,4 +253,17 @@ footer {
     margin-top: 3%; }
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:last-child {
     font-size: 1.5rem;
-    margin-top: 47%; } }
+    margin-top: 47%; }
+  /*Estilo del main info.html*/
+  .carouselInfo .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 2.5rem;
+    margin-left: 30px;
+    margin-top: 3%; }
+  /*Estilo del main alumnos.html*/
+  .ingreso input[type=text] {
+    width: 25rem; }
+  .ingreso button[type=submit] {
+    width: 25rem; }
+  /*Estilo del main autoridades.html*/
+  .mainAutoridades .director {
+    width: 40rem; } }

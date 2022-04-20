@@ -1,0 +1,17 @@
+/*Estilo del main alumnos.html*/
+.infoAlumnos{
+    padding: 2rem;
+    p{
+        text-align: justify;
+    }
+}
+.aviso{
+    text-align: justify;
+    padding: 0 3rem 0rem;
+}
+.ingresoTitulo{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+@import "components/form-login";

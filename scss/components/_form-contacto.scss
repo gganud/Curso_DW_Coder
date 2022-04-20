@@ -1,0 +1,14 @@
+.formContacto{
+    button{
+        background-color: #003e5a;
+        border: none;
+        width: 80%;
+        &:hover{
+            background-color: #004c6e;
+        }
+    }
+    input[type=checkbox]{
+        background-color: #003e5a;
+        border: none;
+    }
+}

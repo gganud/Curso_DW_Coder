@@ -45,5 +45,32 @@
             }
         }  
     }
+    /*Estilo del main info.html*/
+    .carouselInfo{
+        .carousel-inner{
+            .carousel-item{
+                .carousel-caption{
+                    p{
+                        font-size: 2rem;
+                        margin-left:30px;
+                        margin-top: 3%;
+                    }
+                }
+            }
+        } 
+    }
+    /*Estilo del main autoridades.html*/
+    .mainAutoridades{
+        .director{
+            width: 30rem;
+        }   
+        img{
+            transition: .7s;
+            &:hover{
+                transform: scale(1.05); 
+            }
+        }
+    }
+    
 }
 
