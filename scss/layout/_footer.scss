@@ -1,4 +1,5 @@
 footer{
+    padding: .3rem;
     font-weight: 100%;
     background-color:$colorFooter;
     color: white;
@@ -20,11 +21,9 @@ footer{
         width: $footerIcon;
         height: auto;
     }
-    div{
+    .footerInfo{
         div{
-            div{
-                padding-top: .3rem;
-            }
-        }
+            padding: .3rem;
+        }  
     }
 }

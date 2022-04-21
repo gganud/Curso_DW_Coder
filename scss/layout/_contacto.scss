@@ -1,11 +1,17 @@
 /*Estilo del main contacto.html*/
 .mainContacto{
-    img{
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .imgContacto{
+        padding: 1rem;
         width: 100%;
-        border: $colorBorde solid 1px;
-        border-radius: 5px; 
+        img{
+            width: 100%;
+            border: $colorBorde solid 1px;
+            border-radius: 5px; 
+        }
     }
-}
-.contacto{
     @import "components/form-contacto";
 }

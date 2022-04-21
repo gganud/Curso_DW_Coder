@@ -13,6 +13,7 @@
     /*Estilo del navbar*/
     .menu{
         img{
+            width: 60%;
             transition: .7s; 
             &:hover{
                 transform: scale(1.2); 
@@ -25,6 +26,28 @@
             } 
         }
     }
+    /*Estilo del footer*/
+    .footerInfo{
+        display: grid;
+        grid-template-areas: "horario direccion"
+                             "telefono redes"
+                             ;
+        justify-content: space-around;
+        align-items: space-around;   
+    }
+    .horario{
+        grid-area: horario;   
+    }
+    .direccion{
+        grid-area: direccion;   
+    }
+    .telefono{
+        grid-area: telefono;   
+    }
+    .redes{
+        grid-area: redes;   
+    }
+
     /*Estilo del main index.html*/
     .carouselIndex{
         .carousel-inner{
@@ -45,8 +68,38 @@
             }
         }  
     }
+    .mainIndex{
+        display: grid;
+        grid-template-areas: "carouselIndex carouselIndex"
+                             "mainArticle map"
+                             ;
+        justify-content: space-around;
+        align-items: center;
+        grid-template-columns: 60% 40%;   
+    }
+    .carouselIndex{
+        grid-area: carouselIndex;   
+    }
+    .mainArticle{
+        grid-area: mainArticle;   
+    }
+    .map{
+        grid-area: map;   
+    }
     /*Estilo del main info.html*/
+    .mainInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video{
+        width: 60%;
+    }
+    .propuesta{
+        width: 80%;
+    }
     .carouselInfo{
+        width: 60%;
         .carousel-inner{
             .carousel-item{
                 .carousel-caption{
@@ -61,16 +114,55 @@
     }
     /*Estilo del main autoridades.html*/
     .mainAutoridades{
+        display: grid;
+        grid-template-areas: "titulos titulos"
+                             "infoAutoridades infoAutoridades"
+                             "director director"
+                             "cargo2 cargo3"
+                             "cargo4 cargo5"
+                             ;
+        justify-content: center;
+        justify-items: center;
+        column-gap: 1rem;
+        .titulos{
+            grid-area: titulos;   
+        }
+        .infoAutoridades{
+            grid-area: infoAutoridades;
+            width: 70%;   
+        }
         .director{
-            width: 30rem;
-        }   
+            grid-area: director;
+
+        }
+        .cargo2{
+            grid-area: cargo2;   
+        }
+        .cargo3{
+            grid-area: cargo3;   
+        }
+        .cargo4{
+            grid-area: cargo4;   
+        }
+        .cargo5{
+            grid-area: cargo5;   
+        }
         img{
+            max-width: 500px;
             transition: .7s;
             &:hover{
-                transform: scale(1.05); 
+                transform: scale(1.03); 
             }
         }
     }
-    
+    /*Estilo del main contacto.html*/
+    .mainContacto{
+        .imgContacto{
+            width: 70%;
+        }
+        .formContacto{
+            width: 70%;
+        }
+    }
 }
 

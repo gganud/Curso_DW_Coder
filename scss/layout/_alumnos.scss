@@ -7,11 +7,12 @@
 }
 .aviso{
     text-align: justify;
-    padding: 0 3rem 0rem;
+    padding: 0 3rem 1rem;
 }
 .ingresoTitulo{
     text-align: center;
     font-style: italic;
     font-size: 1.2rem;
+    margin: 0 3rem 1rem;
 }
 @import "components/form-login";

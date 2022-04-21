@@ -24,13 +24,13 @@
     left: 10px; }
 
 .menu {
+  padding: 0 1rem;
   background-color: #adadad;
   border: #003e5a solid 1px;
   font-weight: bold;
   font-size: 1rem; }
   .menu img {
-    width: 60%;
-    height: auto; }
+    width: 70%; }
   .menu .nav-item:hover {
     text-decoration: underline; }
 
@@ -38,14 +38,17 @@
   color: #0a3569;
   font-weight: bold;
   font-size: 1.5rem;
-  padding: 2rem 0 0; }
+  padding: 2rem 0 0;
+  text-align: center; }
 
 .subtitulos {
   color: #225973;
   font-weight: bold;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  text-align: center; }
 
 footer {
+  padding: .3rem;
   font-weight: 100%;
   background-color: #061d3a;
   color: white;
@@ -62,8 +65,8 @@ footer {
   footer .imgFooter {
     width: 1.4rem;
     height: auto; }
-  footer div div div {
-    padding-top: .3rem; }
+  footer .footerInfo div {
+    padding: .3rem; }
 
 /*Estilo del main index.html*/
 .mainIndex .carousel {
@@ -89,27 +92,32 @@ footer {
 .mainIndex .mainArticle {
   text-align: justify;
   line-height: 1.5rem;
-  padding: 2rem; }
+  padding: 2rem 2rem 0; }
 
 .mainIndex .map {
-  padding: 0 2rem 2rem; }
+  padding: 2rem 2rem 2rem;
+  position: relative; }
   .mainIndex .map iframe {
-    width: 100%; }
+    width: 100%;
+    aspect-ratio: 4 / 3; }
 
 /*Estilo del main info.html*/
-.mainInfo .video iframe {
-  border: solid 2px #003e5a;
-  border-radius: .5rem; }
+.mainInfo .video {
+  margin: 1rem 2rem 0; }
+  .mainInfo .video iframe {
+    border: solid 2px #003e5a;
+    border-radius: .5rem;
+    width: 100%;
+    aspect-ratio: 16 / 9; }
 
 .mainInfo .propuesta {
-  margin: 2rem 0 0; }
-
-.mainInfo .parrafoInfo {
-  text-align: justify;
-  line-height: 25px; }
+  margin: 2rem 2rem; }
+  .mainInfo .propuesta .parrafoInfo {
+    text-align: justify;
+    line-height: 25px; }
 
 .mainInfo .carouselInfo {
-  padding: 0rem;
+  margin: 2rem;
   border: solid 2px #003e5a;
   border-radius: .5rem; }
   .mainInfo .carouselInfo .carousel-caption {
@@ -134,16 +142,20 @@ footer {
 
 .aviso {
   text-align: justify;
-  padding: 0 3rem 0rem; }
+  padding: 0 3rem 1rem; }
 
 .ingresoTitulo {
   text-align: center;
   font-style: italic;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  margin: 0 3rem 1rem; }
 
 .ingreso {
   background-color: white;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .ingreso input[type=text] {
     width: 17rem; }
   .ingreso input[type=checkbox] {
@@ -157,48 +169,64 @@ footer {
       background-color: #004c6e; }
 
 /*Estilo del main autoridades.html*/
-.mainAutoridades p {
-  margin-bottom: 0; }
-
-.mainAutoridades img {
-  margin-bottom: 0;
-  border-radius: 5px;
-  border: 1px #003e5a solid; }
-
-.mainAutoridades .infoAutoridades {
-  line-height: 25px;
-  font-size: 18px;
-  text-align: justify;
-  padding: 0 3rem 0rem; }
-
-.mainAutoridades .card {
-  border: none; }
-  .mainAutoridades .card .cargo {
-    color: #225973;
-    font-size: 1.5rem;
-    padding: 5px 0; }
-  .mainAutoridades .card .nombre {
+.mainAutoridades {
+  margin: 0 1rem 2rem; }
+  .mainAutoridades p {
+    margin: 0rem; }
+  .mainAutoridades img {
+    margin-bottom: 0;
+    border-radius: 5px;
+    border: 1px #003e5a solid; }
+  .mainAutoridades .infoAutoridades {
+    line-height: 25px;
     font-size: 1rem;
-    color: #003e5a;
-    font-weight: bold;
-    padding-top: 8px; }
+    text-align: justify;
+    padding-bottom: 1rem; }
+  .mainAutoridades .card {
+    border: none;
+    margin-bottom: 1rem; }
+    .mainAutoridades .card .cargo {
+      color: #225973;
+      font-size: 1.5rem;
+      padding: 5px 0; }
+    .mainAutoridades .card .nombre {
+      font-size: 1rem;
+      color: #003e5a;
+      font-weight: bold;
+      padding-top: 8px; }
 
 /*Estilo del main contacto.html*/
-.mainContacto img {
-  width: 100%;
-  border: #003e5a solid 1px;
-  border-radius: 5px; }
-
-.contacto .formContacto button {
-  background-color: #003e5a;
-  border: none;
-  width: 80%; }
-  .contacto .formContacto button:hover {
-    background-color: #004c6e; }
-
-.contacto .formContacto input[type=checkbox] {
-  background-color: #003e5a;
-  border: none; }
+.mainContacto {
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mainContacto .imgContacto {
+    padding: 1rem;
+    width: 100%; }
+    .mainContacto .imgContacto img {
+      width: 100%;
+      border: #003e5a solid 1px;
+      border-radius: 5px; }
+  .mainContacto .formContacto {
+    padding: 1rem;
+    width: 100%; }
+    .mainContacto .formContacto button {
+      background-color: #003e5a;
+      border: none;
+      width: 80%; }
+      .mainContacto .formContacto button:hover {
+        background-color: #004c6e; }
+    .mainContacto .formContacto input[type=checkbox] {
+      background-color: #003e5a;
+      border: none;
+      align-content: center; }
+    .mainContacto .formContacto select {
+      margin-bottom: 1.5rem; }
+    .mainContacto .formContacto .form-check {
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: center; }
 
 @media only screen and (min-width: 576px) {
   .banner h1 {
@@ -209,6 +237,7 @@ footer {
     font-size: 1.7rem; }
   /*Estilo del navbar*/
   .menu img {
+    width: 60%;
     transition: .7s; }
     .menu img:hover {
       transform: scale(1.2); }
@@ -216,6 +245,20 @@ footer {
     transition: .7s; }
     .menu .nav-item:hover {
       transform: scale(1.1); }
+  /*Estilo del footer*/
+  .footerInfo {
+    display: grid;
+    grid-template-areas: "horario direccion" "telefono redes";
+    justify-content: space-around;
+    align-items: space-around; }
+  .horario {
+    grid-area: horario; }
+  .direccion {
+    grid-area: direccion; }
+  .telefono {
+    grid-area: telefono; }
+  .redes {
+    grid-area: redes; }
   /*Estilo del main index.html*/
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:first-child {
     font-size: 2rem;
@@ -224,18 +267,65 @@ footer {
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:last-child {
     font-size: 1rem;
     margin-top: 44%; }
+  .mainIndex {
+    display: grid;
+    grid-template-areas: "carouselIndex carouselIndex" "mainArticle map";
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 60% 40%; }
+  .carouselIndex {
+    grid-area: carouselIndex; }
+  .mainArticle {
+    grid-area: mainArticle; }
+  .map {
+    grid-area: map; }
   /*Estilo del main info.html*/
-  .carouselInfo .carousel-inner .carousel-item .carousel-caption p {
-    font-size: 2rem;
-    margin-left: 30px;
-    margin-top: 3%; }
+  .mainInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .video {
+    width: 60%; }
+  .propuesta {
+    width: 80%; }
+  .carouselInfo {
+    width: 60%; }
+    .carouselInfo .carousel-inner .carousel-item .carousel-caption p {
+      font-size: 2rem;
+      margin-left: 30px;
+      margin-top: 3%; }
   /*Estilo del main autoridades.html*/
-  .mainAutoridades .director {
-    width: 30rem; }
-  .mainAutoridades img {
-    transition: .7s; }
-    .mainAutoridades img:hover {
-      transform: scale(1.05); } }
+  .mainAutoridades {
+    display: grid;
+    grid-template-areas: "titulos titulos" "infoAutoridades infoAutoridades" "director director" "cargo2 cargo3" "cargo4 cargo5";
+    justify-content: center;
+    justify-items: center;
+    column-gap: 1rem; }
+    .mainAutoridades .titulos {
+      grid-area: titulos; }
+    .mainAutoridades .infoAutoridades {
+      grid-area: infoAutoridades;
+      width: 70%; }
+    .mainAutoridades .director {
+      grid-area: director; }
+    .mainAutoridades .cargo2 {
+      grid-area: cargo2; }
+    .mainAutoridades .cargo3 {
+      grid-area: cargo3; }
+    .mainAutoridades .cargo4 {
+      grid-area: cargo4; }
+    .mainAutoridades .cargo5 {
+      grid-area: cargo5; }
+    .mainAutoridades img {
+      max-width: 500px;
+      transition: .7s; }
+      .mainAutoridades img:hover {
+        transform: scale(1.03); }
+  /*Estilo del main contacto.html*/
+  .mainContacto .imgContacto {
+    width: 70%; }
+  .mainContacto .formContacto {
+    width: 70%; } }
 
 @media only screen and (min-width: 992px) {
   .banner {
@@ -246,6 +336,11 @@ footer {
     font-size: 2.3rem; }
   .subtitulos {
     font-size: 2rem; }
+  /*Estilo del footer*/
+  .footerInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around; }
   /*Estilo del main index.html*/
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:first-child {
     font-size: 2.5rem;
@@ -260,10 +355,56 @@ footer {
     margin-left: 30px;
     margin-top: 3%; }
   /*Estilo del main alumnos.html*/
+  .mainAlumnos {
+    display: grid;
+    grid-template-areas: "infoAlumnos aviso" "ingesoBox ingesoBox";
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 60% 40%; }
+  .infoAlumnos {
+    grid-area: infoAlumnos; }
+  .ingesoBox {
+    grid-area: ingesoBox; }
+  .aviso {
+    grid-area: aviso; }
   .ingreso input[type=text] {
     width: 25rem; }
   .ingreso button[type=submit] {
     width: 25rem; }
   /*Estilo del main autoridades.html*/
-  .mainAutoridades .director {
-    width: 40rem; } }
+  .mainAutoridades {
+    display: grid;
+    grid-template-areas: "titulos titulos titulos titulos" "infoAutoridades infoAutoridades infoAutoridades infoAutoridades" "director director director director" "cargo2 cargo3 cargo4 cargo5";
+    justify-items: center;
+    column-gap: 1rem; }
+    .mainAutoridades .titulos {
+      grid-area: titulos; }
+    .mainAutoridades .infoAutoridades {
+      grid-area: infoAutoridades; }
+    .mainAutoridades .director {
+      grid-area: director; }
+    .mainAutoridades .cargo2 {
+      grid-area: cargo2; }
+    .mainAutoridades .cargo3 {
+      grid-area: cargo3; }
+    .mainAutoridades .cargo4 {
+      grid-area: cargo4; }
+    .mainAutoridades .cargo5 {
+      grid-area: cargo5; }
+  /*Estilo del main contacto.html*/
+  .mainContacto {
+    margin: 0 2rem;
+    display: grid;
+    grid-template-areas: "titulos titulos" "imgContacto formContacto";
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 50% 50%; }
+    .mainContacto .titulos {
+      grid-area: titulos; }
+    .mainContacto .imgContacto {
+      grid-area: imgContacto;
+      width: 100%;
+      padding-bottom: 5rem; }
+    .mainContacto .formContacto {
+      grid-area: formContacto;
+      width: 100%; } }

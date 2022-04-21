@@ -1,4 +1,6 @@
 .formContacto{
+    padding: 1rem;
+    width: 100%;
     button{
         background-color: #003e5a;
         border: none;
@@ -10,5 +12,15 @@
     input[type=checkbox]{
         background-color: #003e5a;
         border: none;
+        align-content: center;
+    }
+    select{
+        margin-bottom: 1.5rem;
+    }
+    .form-check{
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+
     }
 }

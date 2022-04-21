@@ -1,6 +1,9 @@
 .ingreso{
     background-color: white;
     padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     input[type=text]{
         width: 17rem;
     }
