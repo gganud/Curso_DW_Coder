@@ -5,9 +5,16 @@
   text-decoration: none;
   font-family: 'Roboto', sans-serif; }
 
+main {
+  color: black; }
+
+.formColorBorder, .ingreso input[type=checkbox], .ingreso button[type=submit], .mainContacto .formContacto button, .mainContacto .formContacto input[type=checkbox] {
+  background-color: #003e5a;
+  border: none; }
+
 .banner {
   width: 100%;
-  background-image: url("../img/index1.jpg");
+  background-image: url("../../img/banner.png");
   background-size: cover;
   background-position: center;
   height: 150px;
@@ -81,12 +88,12 @@ footer {
     left: 0; }
     .mainIndex .carousel .carousel-caption p:first-child {
       text-align: left;
-      font-size: 1rem;
       margin-left: 30px;
+      font-size: 1rem;
       margin-top: 5%; }
     .mainIndex .carousel .carousel-caption p:last-child {
       text-align: center;
-      font-size: .7rem;
+      font-size: 0.7rem;
       margin-top: 40%; }
 
 .mainIndex .mainArticle {
@@ -130,8 +137,8 @@ footer {
     left: 0; }
     .mainInfo .carouselInfo .carousel-caption p {
       text-align: left;
-      font-size: 1rem;
       margin-left: 30px;
+      font-size: 1rem;
       margin-top: 5%; }
 
 /*Estilo del main alumnos.html*/
@@ -158,13 +165,8 @@ footer {
   align-items: center; }
   .ingreso input[type=text] {
     width: 17rem; }
-  .ingreso input[type=checkbox] {
-    background-color: #003e5a;
-    border: none; }
   .ingreso button[type=submit] {
-    width: 17rem;
-    background-color: #003e5a;
-    border: none; }
+    width: 17rem; }
     .ingreso button[type=submit]:hover {
       background-color: #004c6e; }
 
@@ -212,14 +214,10 @@ footer {
     padding: 1rem;
     width: 100%; }
     .mainContacto .formContacto button {
-      background-color: #003e5a;
-      border: none;
       width: 80%; }
       .mainContacto .formContacto button:hover {
         background-color: #004c6e; }
     .mainContacto .formContacto input[type=checkbox] {
-      background-color: #003e5a;
-      border: none;
       align-content: center; }
     .mainContacto .formContacto select {
       margin-bottom: 1.5rem; }
@@ -262,8 +260,8 @@ footer {
   /*Estilo del main index.html*/
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:first-child {
     font-size: 2rem;
-    margin-left: 30px;
-    margin-top: 3%; }
+    margin-top: 3%;
+    margin-left: 30px; }
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:last-child {
     font-size: 1rem;
     margin-top: 44%; }
@@ -292,8 +290,8 @@ footer {
     width: 60%; }
     .carouselInfo .carousel-inner .carousel-item .carousel-caption p {
       font-size: 2rem;
-      margin-left: 30px;
-      margin-top: 3%; }
+      margin-top: 3%;
+      margin-left: 30px; }
   /*Estilo del main autoridades.html*/
   .mainAutoridades {
     display: grid;
@@ -344,16 +342,16 @@ footer {
   /*Estilo del main index.html*/
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:first-child {
     font-size: 2.5rem;
-    margin-left: 30px;
-    margin-top: 3%; }
+    margin-top: 3%;
+    margin-left: 30px; }
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:last-child {
     font-size: 1.5rem;
     margin-top: 47%; }
   /*Estilo del main info.html*/
   .carouselInfo .carousel-inner .carousel-item .carousel-caption p {
     font-size: 2.5rem;
-    margin-left: 30px;
-    margin-top: 3%; }
+    margin-top: 3%;
+    margin-left: 30px; }
   /*Estilo del main alumnos.html*/
   .mainAlumnos {
     display: grid;

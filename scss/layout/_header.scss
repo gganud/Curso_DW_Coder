@@ -1,19 +1,29 @@
+//Agrego un mapa para el estilo del titulo dentro del banner.
+$estiloh1: (
+    colorF: $colorBanner,
+    tFuente: $SizeBanner,
+    margen: 0,
+    eFuente: italic,
+    tPosicion: absolute,
+    posicionBaja: 10px,
+    posicionIzq: 10px,
+);
 .banner{
     width: 100%;
-    background-image: url("../img/index1.jpg");
+    background-image: url("../../img/banner.png");
     background-size: cover;
     background-position:center;
     height: $heightBanner;
     position: relative;
     h1{
-        color: $colorBanner;
-        font-size: $SizeBanner;
-        margin: 0;
-        font-style: italic;
+        color: map-get($map: $estiloh1, $key: colorF);
+        font-size: map-get($map: $estiloh1, $key: tFuente);
+        margin: map-get($map: $estiloh1, $key: margen);
+        font-style: map-get($map: $estiloh1, $key: eFuente);
         font-family: 'Open Sans', sans-serif;
         text-shadow: 0 0 3px #061d3a, 0 0 5px white;
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
+        position: map-get($map: $estiloh1, $key: tPosicion);
+        bottom: map-get($map: $estiloh1, $key: posicionBaja);
+        left: map-get($map: $estiloh1, $key: posicionIzq);
     }
 }

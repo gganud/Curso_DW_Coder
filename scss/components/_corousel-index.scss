@@ -11,14 +11,12 @@
         p{
             &:first-child{
                 text-align: left;
-                font-size: 1rem;
                 margin-left:30px;
-                margin-top: 5%;
+                @include textCarousel-tFuente-mTop(1rem,5%);
             }
             &:last-child{
                 text-align: center;
-                font-size: .7rem;
-                margin-top: 40%;  
+                @include textCarousel-tFuente-mTop(.7rem,40%);  
             } 
         }
     }

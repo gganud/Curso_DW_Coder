@@ -1,0 +1,9 @@
+@mixin flex-row-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+}
+@mixin textCarousel-tFuente-mTop($tFuente, $mTop){
+    font-size: $tFuente;
+    margin-top: $mTop;
+}

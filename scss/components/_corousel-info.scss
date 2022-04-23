@@ -12,9 +12,8 @@
         left:0;
         p{
             text-align: left;
-            font-size: 1rem;
             margin-left:30px;
-            margin-top: 5%;
+            @include textCarousel-tFuente-mTop(1rem,5%);
         }
     }
 }
