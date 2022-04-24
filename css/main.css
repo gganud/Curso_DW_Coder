@@ -6,7 +6,8 @@
   font-family: 'Roboto', sans-serif; }
 
 main {
-  color: black; }
+  color: black;
+  text-align: justify; }
 
 .formColorBorder, .ingreso input[type=checkbox], .ingreso button[type=submit], .mainContacto .formContacto button, .mainContacto .formContacto input[type=checkbox] {
   background-color: #003e5a;
@@ -14,7 +15,7 @@ main {
 
 .banner {
   width: 100%;
-  background-image: url("../../img/banner.png");
+  background-image: url("../img/banner.png");
   background-size: cover;
   background-position: center;
   height: 150px;
@@ -117,11 +118,12 @@ footer {
     width: 100%;
     aspect-ratio: 16 / 9; }
 
-.mainInfo .propuesta {
+.mainInfo .articuloInfo {
   margin: 2rem 2rem; }
-  .mainInfo .propuesta .parrafoInfo {
+  .mainInfo .articuloInfo .parrafoInfo {
     text-align: justify;
-    line-height: 25px; }
+    line-height: 25px;
+    font-style: italic; }
 
 .mainInfo .carouselInfo {
   margin: 2rem;

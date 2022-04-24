@@ -9,11 +9,12 @@
             aspect-ratio: 16 / 9;
         }
     }
-    .propuesta{
+    .articuloInfo{
         margin: 2rem 2rem;
         .parrafoInfo{
             text-align: justify;
             line-height: 25px;
+            font-style: italic
         }
     }
     @import "components/corousel-info";
