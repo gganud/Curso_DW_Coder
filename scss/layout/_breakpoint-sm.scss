@@ -27,26 +27,36 @@
         }
     }
     /*Estilo del footer*/
-    .footerInfo{
-        display: grid;
-        grid-template-areas: "horario direccion"
-                             "telefono redes"
-                             ;
-        justify-content: space-around;
-        align-items: space-around;   
+    footer{
+        .footerInfo{
+            display: grid;
+            grid-template-areas: "horario direccion"
+                                 "telefono redes"
+                                 ;
+            justify-content: space-around;
+            align-items: space-around;
+            .horario{
+                grid-area: horario;   
+            }
+            .direccion{
+                grid-area: direccion;   
+            }
+            .telefono{
+                grid-area: telefono;   
+            }
+            .redes{
+                grid-area: redes;   
+            }   
+        }
+        img{
+            transition: .7s; 
+            &:hover{
+                transform: scale(1.2); 
+            }
+        }   
     }
-    .horario{
-        grid-area: horario;   
-    }
-    .direccion{
-        grid-area: direccion;   
-    }
-    .telefono{
-        grid-area: telefono;   
-    }
-    .redes{
-        grid-area: redes;   
-    }
+    
+    
 
     /*Estilo del main index.html*/
     .carouselIndex{
@@ -59,7 +69,7 @@
                             margin-left:30px;
                         }
                         &:last-child{
-                            @include textCarousel-tFuente-mTop(1rem,44%);
+                            @include textCarousel-tFuente-mTop(1rem,35%);
                         }
                     }
                 }
@@ -113,23 +123,17 @@
     .mainAutoridades{
         display: grid;
         grid-template-areas: "titulos titulos"
-                             "infoAutoridades infoAutoridades"
-                             "director director"
+                             "cargo1 cargo1"
                              "cargo2 cargo3"
-                             "cargo4 cargo5"
                              ;
         justify-content: center;
         justify-items: center;
-        column-gap: 1rem;
+        column-gap: 3rem;
         .titulos{
             grid-area: titulos;   
         }
-        .infoAutoridades{
-            grid-area: infoAutoridades;
-            width: 70%;   
-        }
-        .director{
-            grid-area: director;
+        .cargo1{
+            grid-area: cargo1;
 
         }
         .cargo2{
@@ -138,14 +142,8 @@
         .cargo3{
             grid-area: cargo3;   
         }
-        .cargo4{
-            grid-area: cargo4;   
-        }
-        .cargo5{
-            grid-area: cargo5;   
-        }
         img{
-            max-width: 500px;
+            max-width: 350px;
             transition: .7s;
             &:hover{
                 transform: scale(1.03); 

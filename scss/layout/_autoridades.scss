@@ -1,6 +1,6 @@
 /*Estilo del main autoridades.html*/
 .mainAutoridades{
-    margin: 0 1rem 2rem;
+    margin: 0 5rem 2rem;
     p{
         margin: 0rem;
     }
@@ -9,18 +9,13 @@
         border-radius: 5px;
         border: 1px $colorBorde solid;
     }
-    .infoAutoridades{
-        line-height: 25px;
-        font-size: 1rem;
-        text-align: justify;
-        padding-bottom: 1rem;
-    }
+    
     .card{
         border:none;
         margin-bottom: 1rem;
         .cargo{
             color:$colorSubtitulos;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             padding: 5px 0;
         }
         .nombre{
@@ -30,5 +25,6 @@
             padding-top: 8px;  
         }
     }
+    
 }
 

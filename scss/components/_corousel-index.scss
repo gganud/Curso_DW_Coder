@@ -15,8 +15,9 @@
                 @include textCarousel-tFuente-mTop(1rem,5%);
             }
             &:last-child{
-                text-align: center;
-                @include textCarousel-tFuente-mTop(.7rem,40%);  
+                text-align: right;
+                margin-right:20px;
+                @include textCarousel-tFuente-mTop(.7rem,37%);  
             } 
         }
     }

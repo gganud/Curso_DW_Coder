@@ -61,6 +61,8 @@ footer {
   background-color: #061d3a;
   color: white;
   text-align: center; }
+  footer img {
+    margin: 0 .5rem; }
   footer a {
     text-decoration: none;
     color: white; }
@@ -74,7 +76,10 @@ footer {
     width: 1.4rem;
     height: auto; }
   footer .footerInfo div {
-    padding: .3rem; }
+    padding: .3rem 0; }
+  footer .footerInfo .redes {
+    display: flex;
+    justify-content: center; }
 
 /*Estilo del main index.html*/
 .mainIndex .carousel {
@@ -93,9 +98,10 @@ footer {
       font-size: 1rem;
       margin-top: 5%; }
     .mainIndex .carousel .carousel-caption p:last-child {
-      text-align: center;
+      text-align: right;
+      margin-right: 20px;
       font-size: 0.7rem;
-      margin-top: 40%; }
+      margin-top: 37%; }
 
 .mainIndex .mainArticle {
   text-align: justify;
@@ -175,24 +181,19 @@ footer {
 
 /*Estilo del main autoridades.html*/
 .mainAutoridades {
-  margin: 0 1rem 2rem; }
+  margin: 0 5rem 2rem; }
   .mainAutoridades p {
     margin: 0rem; }
   .mainAutoridades img {
     margin-bottom: 0;
     border-radius: 5px;
     border: 1px #003e5a solid; }
-  .mainAutoridades .infoAutoridades {
-    line-height: 25px;
-    font-size: 1rem;
-    text-align: justify;
-    padding-bottom: 1rem; }
   .mainAutoridades .card {
     border: none;
     margin-bottom: 1rem; }
     .mainAutoridades .card .cargo {
       color: #225973;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       padding: 5px 0; }
     .mainAutoridades .card .nombre {
       font-size: 1rem;
@@ -247,19 +248,23 @@ footer {
     .menu .nav-item:hover {
       transform: scale(1.1); }
   /*Estilo del footer*/
-  .footerInfo {
+  footer .footerInfo {
     display: grid;
     grid-template-areas: "horario direccion" "telefono redes";
     justify-content: space-around;
     align-items: space-around; }
-  .horario {
-    grid-area: horario; }
-  .direccion {
-    grid-area: direccion; }
-  .telefono {
-    grid-area: telefono; }
-  .redes {
-    grid-area: redes; }
+    footer .footerInfo .horario {
+      grid-area: horario; }
+    footer .footerInfo .direccion {
+      grid-area: direccion; }
+    footer .footerInfo .telefono {
+      grid-area: telefono; }
+    footer .footerInfo .redes {
+      grid-area: redes; }
+  footer img {
+    transition: .7s; }
+    footer img:hover {
+      transform: scale(1.2); }
   /*Estilo del main index.html*/
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:first-child {
     font-size: 2rem;
@@ -267,7 +272,7 @@ footer {
     margin-left: 30px; }
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:last-child {
     font-size: 1rem;
-    margin-top: 44%; }
+    margin-top: 35%; }
   .mainIndex {
     display: grid;
     grid-template-areas: "carouselIndex carouselIndex" "mainArticle map";
@@ -298,27 +303,20 @@ footer {
   /*Estilo del main autoridades.html*/
   .mainAutoridades {
     display: grid;
-    grid-template-areas: "titulos titulos" "infoAutoridades infoAutoridades" "director director" "cargo2 cargo3" "cargo4 cargo5";
+    grid-template-areas: "titulos titulos" "cargo1 cargo1" "cargo2 cargo3";
     justify-content: center;
     justify-items: center;
-    column-gap: 1rem; }
+    column-gap: 3rem; }
     .mainAutoridades .titulos {
       grid-area: titulos; }
-    .mainAutoridades .infoAutoridades {
-      grid-area: infoAutoridades;
-      width: 70%; }
-    .mainAutoridades .director {
-      grid-area: director; }
+    .mainAutoridades .cargo1 {
+      grid-area: cargo1; }
     .mainAutoridades .cargo2 {
       grid-area: cargo2; }
     .mainAutoridades .cargo3 {
       grid-area: cargo3; }
-    .mainAutoridades .cargo4 {
-      grid-area: cargo4; }
-    .mainAutoridades .cargo5 {
-      grid-area: cargo5; }
     .mainAutoridades img {
-      max-width: 500px;
+      max-width: 350px;
       transition: .7s; }
       .mainAutoridades img:hover {
         transform: scale(1.03); }
@@ -338,7 +336,7 @@ footer {
   .subtitulos {
     font-size: 2rem; }
   /*Estilo del footer*/
-  .footerInfo {
+  footer .footerInfo {
     display: flex;
     justify-content: space-around;
     align-items: space-around; }
@@ -349,7 +347,7 @@ footer {
     margin-left: 30px; }
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:last-child {
     font-size: 1.5rem;
-    margin-top: 47%; }
+    margin-top: 40%; }
   /*Estilo del main info.html*/
   .video {
     width: 70%; }
@@ -380,24 +378,9 @@ footer {
     width: 25rem; }
   /*Estilo del main autoridades.html*/
   .mainAutoridades {
-    display: grid;
-    grid-template-areas: "titulos titulos titulos titulos" "infoAutoridades infoAutoridades infoAutoridades infoAutoridades" "director director director director" "cargo2 cargo3 cargo4 cargo5";
-    justify-items: center;
-    column-gap: 1rem; }
-    .mainAutoridades .titulos {
-      grid-area: titulos; }
-    .mainAutoridades .infoAutoridades {
-      grid-area: infoAutoridades; }
-    .mainAutoridades .director {
-      grid-area: director; }
-    .mainAutoridades .cargo2 {
-      grid-area: cargo2; }
-    .mainAutoridades .cargo3 {
-      grid-area: cargo3; }
-    .mainAutoridades .cargo4 {
-      grid-area: cargo4; }
-    .mainAutoridades .cargo5 {
-      grid-area: cargo5; }
+    display: flex;
+    align-items: center;
+    justify-items: center; }
   /*Estilo del main contacto.html*/
   .mainContacto {
     margin: 0 2rem;

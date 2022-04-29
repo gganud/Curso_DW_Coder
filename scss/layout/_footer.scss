@@ -4,6 +4,9 @@ footer{
     background-color:$colorFooter;
     color: white;
     text-align: center; 
+    img{
+        margin: 0 .5rem;
+    }
     a{
         text-decoration: none;
         color: white;
@@ -23,7 +26,11 @@ footer{
     }
     .footerInfo{
         div{
-            padding: .3rem;
+            padding: .3rem 0;
+        }
+        .redes{
+            display: flex;
+            justify-content: center;
         }  
     }
 }
