@@ -54,9 +54,9 @@ main {
   text-align: center; }
 
 footer {
-  padding: .3rem;
+  padding: 0rem;
   font-weight: 100%;
-  background-color: #061d3a;
+  background-color: #082c57;
   color: white;
   text-align: center; }
   footer img {
@@ -67,44 +67,54 @@ footer {
     footer a:hover {
       color: #00A6F2; }
   footer .subir {
-    font-weight: bold; }
+    font-weight: bold;
+    padding-top: .3rem; }
   footer p {
     margin-bottom: 0; }
   footer .imgFooter {
     width: 1.4rem;
     height: auto; }
-  footer .footerInfo div {
-    padding: .3rem 0; }
-  footer .footerInfo .redes {
-    display: flex;
-    justify-content: center; }
+  footer .footerInfo {
+    padding: .7rem 0; }
+    footer .footerInfo div {
+      padding: .3rem 0; }
+    footer .footerInfo .redes {
+      display: flex;
+      justify-content: center; }
+  footer .derechos {
+    font-size: smaller;
+    background-color: #061d3a;
+    padding: .3rem; }
+    footer .derechos .separador {
+      display: none; }
 
 /*Estilo del main index.html*/
 .mainIndex .carousel {
   padding: 0rem; }
-  .mainIndex .carousel .carousel-indicators button {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    margin-left: 5px; }
+  .mainIndex .carousel .carousel-indicators {
+    margin-bottom: 0.5rem; }
+    .mainIndex .carousel .carousel-indicators button {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      margin-left: 5px; }
   .mainIndex .carousel .carousel-caption {
-    text-align: center;
     color: #ffffff;
-    text-shadow: 0 0 5px black, 0 0 5px black;
+    text-shadow: 0 0 10px black, 0 0 10px black;
     font-weight: bold;
     width: 100%;
     height: 100%;
     left: 0; }
     .mainIndex .carousel .carousel-caption p:first-child {
       text-align: left;
-      margin-left: 30px;
+      margin-left: 2%;
       font-size: 1rem;
-      margin-top: 5%; }
+      margin-top: 2%; }
     .mainIndex .carousel .carousel-caption p:last-child {
       text-align: right;
-      margin-right: 20px;
-      font-size: 0.7rem;
-      margin-top: 23%; }
+      margin-right: 2%;
+      font-size: 0.5rem;
+      margin-top: 30%; }
 
 .mainIndex .mainArticle {
   text-align: justify;
@@ -139,24 +149,25 @@ footer {
   margin: 2rem;
   border: solid 2px #003e5a;
   border-radius: .5rem; }
-  .mainInfo .carouselInfo .carousel-indicators button {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    margin-left: 5px; }
+  .mainInfo .carouselInfo .carousel-indicators {
+    margin-bottom: 0.5rem; }
+    .mainInfo .carouselInfo .carousel-indicators button {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      margin-left: 5px; }
   .mainInfo .carouselInfo .carousel-caption {
-    text-align: center;
     color: #ffffff;
-    text-shadow: 0 0 5px black, 0 0 5px black;
+    text-shadow: 0 0 10px black, 0 0 10px black;
     font-weight: bold;
     width: 100%;
     height: 100%;
     left: 0; }
     .mainInfo .carouselInfo .carousel-caption p {
       text-align: left;
-      margin-left: 30px;
+      margin-left: 2%;
       font-size: 1rem;
-      margin-top: 5%; }
+      margin-top: 1%; }
 
 /*Estilo del main alumnos.html*/
 .infoAlumnos {
@@ -276,11 +287,17 @@ footer {
     transition: .7s; }
     footer img:hover {
       transform: scale(1.2); }
+  footer .derechos {
+    display: flex;
+    justify-content: center; }
+    footer .derechos .separador {
+      display: inline;
+      padding: 0 .3rem; }
   /*Estilo del main index.html*/
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:first-child {
     font-size: 2rem;
-    margin-top: 3%;
-    margin-left: 30px; }
+    margin-top: 1%;
+    margin-left: 2%; }
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:last-child {
     font-size: 1rem;
     margin-top: 35%; }
@@ -309,8 +326,8 @@ footer {
     width: 80%; }
     .carouselInfo .carousel-inner .carousel-item .carousel-caption p {
       font-size: 2rem;
-      margin-top: 3%;
-      margin-left: 30px; }
+      margin-top: 1%;
+      margin-left: 2%; }
   /*Estilo del main autoridades.html*/
   .mainAutoridades {
     display: grid;
@@ -350,14 +367,14 @@ footer {
   footer .footerInfo {
     display: flex;
     justify-content: space-around;
-    align-items: space-around; }
+    align-items: center; }
   /*Estilo del main index.html*/
   .mainIndex {
     grid-template-columns: 50% 50%; }
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:first-child {
     font-size: 2.5rem;
-    margin-top: 3%;
-    margin-left: 30px; }
+    margin-top: 1%;
+    margin-left: 2%; }
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:last-child {
     font-size: 1.5rem;
     margin-top: 40%; }
@@ -370,8 +387,8 @@ footer {
     width: 70%; }
     .carouselInfo .carousel-inner .carousel-item .carousel-caption p {
       font-size: 2.5rem;
-      margin-top: 3%;
-      margin-left: 30px; }
+      margin-top: 1%;
+      margin-left: 2%; }
   /*Estilo del main alumnos.html*/
   .mainAlumnos {
     display: grid;

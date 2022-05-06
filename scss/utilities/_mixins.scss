@@ -1,7 +1,7 @@
 @mixin flex-row-around {
     display: flex;
     justify-content: space-around;
-    align-items: space-around;
+    align-items: center;
 }
 @mixin textCarousel-tFuente-mTop($tFuente, $mTop){
     font-size: $tFuente;

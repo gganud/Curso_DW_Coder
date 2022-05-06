@@ -14,7 +14,7 @@
     /*Estilo del footer*/
     footer{
         .footerInfo{
-            @include flex-row-around;   
+            @include flex-row-around;  
         }
     }
     
@@ -29,8 +29,8 @@
                 .carousel-caption{
                     p{
                         &:first-child{
-                            @include textCarousel-tFuente-mTop(2.5rem,3%);
-                            margin-left:30px;
+                            @include textCarousel-tFuente-mTop(2.5rem,1%);
+                            margin-left:2%;
                         }
                         &:last-child{
                             @include textCarousel-tFuente-mTop(1.5rem,40%);
@@ -53,8 +53,8 @@
             .carousel-item{
                 .carousel-caption{
                     p{
-                        @include textCarousel-tFuente-mTop(2.5rem,3%);
-                        margin-left:30px;
+                        @include textCarousel-tFuente-mTop(2.5rem,1%);
+                        margin-left:2%;
                     }
                 }
             }

@@ -1,5 +1,5 @@
 footer{
-    padding: .3rem;
+    padding: 0rem;
     font-weight: 100%;
     background-color:$colorFooter;
     color: white;
@@ -16,6 +16,7 @@ footer{
     }
     .subir{
         font-weight: bold;
+        padding-top: .3rem;
     }
     p{
         margin-bottom: 0;
@@ -25,6 +26,7 @@ footer{
         height: auto;
     }
     .footerInfo{
+        padding: .7rem 0;
         div{
             padding: .3rem 0;
         }
@@ -32,5 +34,14 @@ footer{
             display: flex;
             justify-content: center;
         }  
+    }
+    .derechos{
+        font-size: smaller;
+        background-color: #061d3a;
+        padding: .3rem;
+        .separador{
+            display: none;
+        }
+
     }
 }
