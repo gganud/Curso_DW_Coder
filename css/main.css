@@ -39,8 +39,6 @@ main {
   font-size: 1rem; }
   .menu img {
     width: 70%; }
-  .menu .nav-item:hover {
-    text-decoration: underline; }
 
 .titulos {
   color: #0a3569;
@@ -84,6 +82,11 @@ footer {
 /*Estilo del main index.html*/
 .mainIndex .carousel {
   padding: 0rem; }
+  .mainIndex .carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-left: 5px; }
   .mainIndex .carousel .carousel-caption {
     text-align: center;
     color: #ffffff;
@@ -136,6 +139,11 @@ footer {
   margin: 2rem;
   border: solid 2px #003e5a;
   border-radius: .5rem; }
+  .mainInfo .carouselInfo .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-left: 5px; }
   .mainInfo .carouselInfo .carousel-caption {
     text-align: center;
     color: #ffffff;
@@ -244,8 +252,9 @@ footer {
     width: 60%;
     transition: .7s; }
     .menu img:hover {
-      transform: scale(1.2); }
+      transform: scale(1.1); }
   .menu .nav-item {
+    margin-left: 1rem;
     transition: .7s; }
     .menu .nav-item:hover {
       transform: scale(1.1); }
@@ -343,6 +352,8 @@ footer {
     justify-content: space-around;
     align-items: space-around; }
   /*Estilo del main index.html*/
+  .mainIndex {
+    grid-template-columns: 50% 50%; }
   .carouselIndex .carousel-inner .carousel-item .carousel-caption p:first-child {
     font-size: 2.5rem;
     margin-top: 3%;
@@ -382,7 +393,8 @@ footer {
   .mainAutoridades {
     display: flex;
     align-items: center;
-    justify-items: center; }
+    justify-items: center;
+    margin-top: 2rem; }
   /*Estilo del main contacto.html*/
   .mainContacto {
     margin: 0 2rem;

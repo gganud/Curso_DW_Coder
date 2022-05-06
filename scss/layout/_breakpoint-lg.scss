@@ -20,6 +20,9 @@
     
     
     /*Estilo del main index.html*/
+    .mainIndex{
+        grid-template-columns: 50% 50%;
+    }
     .carouselIndex{
         .carousel-inner{
             .carousel-item{
@@ -89,8 +92,7 @@
         display: flex;
         align-items: center;
         justify-items: center;
-
-       
+        margin-top: 2rem;       
     }
     /*Estilo del main contacto.html*/
     .mainContacto{

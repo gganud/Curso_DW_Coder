@@ -2,6 +2,14 @@
     margin: 2rem;
     border: solid 2px #003e5a;
     border-radius: .5rem;
+    .carousel-indicators{
+        button{
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin-left: 5px;            
+        }
+    }
     .carousel-caption{
         text-align: center;
         color: #ffffff;

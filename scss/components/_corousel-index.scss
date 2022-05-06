@@ -1,5 +1,13 @@
 .carousel{
     padding: 0rem;
+    .carousel-indicators{
+        button{
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin-left: 5px;            
+        }
+    }
     .carousel-caption{
         text-align: center;
         color: #ffffff;
