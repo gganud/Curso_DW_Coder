@@ -92,7 +92,7 @@ footer {
 .mainIndex .carousel {
   padding: 0rem; }
   .mainIndex .carousel .carousel-indicators {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.3rem; }
     .mainIndex .carousel .carousel-indicators button {
       width: 10px;
       height: 10px;
@@ -113,7 +113,7 @@ footer {
     .mainIndex .carousel .carousel-caption p:last-child {
       text-align: right;
       margin-right: 2%;
-      font-size: 0.5rem;
+      font-size: 0.7rem;
       margin-top: 30%; }
 
 .mainIndex .mainArticle {
