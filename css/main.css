@@ -274,7 +274,7 @@ footer {
     display: grid;
     grid-template-areas: "horario direccion" "telefono redes";
     justify-content: space-around;
-    align-items: space-around; }
+    align-items: center; }
     footer .footerInfo .horario {
       grid-area: horario; }
     footer .footerInfo .direccion {
